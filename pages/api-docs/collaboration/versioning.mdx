@@ -14,12 +14,12 @@ In sensenet, versioning is disabled by default. It can be enabled for folders or
 
 Versioning mode can be set as the followings:
 
-| Name | Number | Description |
-|-|-|-|
-|**None**|0|The default setting of the Root folder, no versioning.|
-|**Inherited**|1|The folder inherits its versioning mode from its parent. This is the default setting for all other content.|
-|**Major only**|2|Only major versions (1.0, 2.0,...) are preserved.|
-|**Major and minor**|3|Every version is preserved (1.0, 1.1, 1.2,...).|
+| Name                | Number | Description                                                                                                 |
+| ------------------- | ------ | ----------------------------------------------------------------------------------------------------------- |
+| **None**            | 0      | The default setting of the Root folder, no versioning.                                                      |
+| **Inherited**       | 1      | The folder inherits its versioning mode from its parent. This is the default setting for all other content. |
+| **Major only**      | 2      | Only major versions (1.0, 2.0,...) are preserved.                                                           |
+| **Major and minor** | 3      | Every version is preserved (1.0, 1.1, 1.2,...).                                                             |
 
 With the following example you switch on versioning for a workspace:
 
@@ -29,13 +29,13 @@ With the following example you switch on versioning for a workspace:
 
 Content in the repository can have several non-numeric version states:
 
-| | | |
-|-|-|-|
-|A|APPROVED|Only a major version can be in approved state: 1.0A or 2.0A. The last approved version of the content is that users with low level permission can see.|
-|L|LOCKED|When a content is locked, only the user who locked it can modify it.|
-|D|DRAFT|A draft version is only visible to users who have permission to see minor versions of a content. Any other user will see the last public version.|
-|P|PENDING|When approval is enabled in a folder or list, then contents cannot be published without approval.| After sending a content for approval it remains in pending for approval state, until somebody with sufficient rights approves it.|
-|R|REJECTED|If a content is not correct, the user with approving rights can reject it. This means it is not published and should be refined.|
+|     |          |                                                                                                                                                        |
+| --- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| A   | APPROVED | Only a major version can be in approved state: 1.0A or 2.0A. The last approved version of the content is that users with low level permission can see. |
+| L   | LOCKED   | When a content is locked, only the user who locked it can modify it.                                                                                   |
+| D   | DRAFT    | A draft version is only visible to users who have permission to see minor versions of a content. Any other user will see the last public version.      |
+| P   | PENDING  | When approval is enabled in a folder or list, then contents cannot be published without approval.                                                      | After sending a content for approval it remains in pending for approval state, until somebody with sufficient rights approves it. |
+| R   | REJECTED | If a content is not correct, the user with approving rights can reject it. This means it is not published and should be refined.                       |
 
 ## et current version of a content
 
@@ -107,13 +107,7 @@ It is also possible to recall an older version. In the next example you can see 
 
 <tab category="collaboration" article="versioning" example="recallVersion" />
 &nbsp;
-<note>You must be allowed to restore previous versions having 'Recall old versions' permission allowed on the content.</note>
-
-<!--# Delete an old version
-
-Sometimes it could be useful to remove old versions, because if you're working on a content constantly creating tons of versions, it may increase the size of the database. With the following example you can remove a previous version:
-
-<tab category="collaboration" article="versioning" example="deleteVersion" />
-&nbsp;
-<note>You must be allowed to restore previous versions having 'Delete old versions' permission allowed on the content.</note>-->
-
+<note>
+  You must be allowed to restore previous versions having 'Recall old versions'
+  permission allowed on the content.
+</note>
